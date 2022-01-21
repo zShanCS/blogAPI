@@ -17,7 +17,7 @@ When this is done and all installations are successfull...
 ### To run in development mode:
 
 ```bash
-uvicorn main:app --reload
+uvicorn src.main:app --reload
 ```
 
 
