@@ -27,6 +27,8 @@ by default the server's docs are accessible at:
 
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
+![image 1](https://github.com/zshancs/blogapi/images/master/1.png?raw=true)
+![image 2](https://github.com/zshancs/blogapi/images/master/1.png?raw=true)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
