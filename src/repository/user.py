@@ -9,11 +9,15 @@ from sqlalchemy.orm.session import Session
 def create(request: schemas.CreateUser, db: Session):
     hashed_password = Hash.bcrypt(request.password)
     print(request.password, hashed_password)
-    new_user = models.User(
-        name=request.name, email=request.email, password=hashed_password)
-    db.add(new_user)
-    db.commit()
-    db.refresh(new_user)
+    try:
+        new_user = models.User(
+            name=request.name, email=request.email, password=hashed_password)
+        db.add(new_user)
+        db.commit()
+        db.refresh(new_user)
+    except Exception:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+                            detail=f'Something went wrong. Use unique username please.')
     return new_user
 
 
