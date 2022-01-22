@@ -1,0 +1,1 @@
+{"id":"b29fe36d-329c-46bb-ab25-3794a91001cb","space":16490,"runtime":"python3.9","name":"blog","path":"rxjb81","project":"c0w1ngz1","account":"144798365827","region":"ap-southeast-1","deps":["fastapi==0.70.0","uvicorn[standard]","pydantic","python-multipart","sqlalchemy","passlib[bcrypt]","python-jose[cryptography]"],"envs":null,"public":true,"log_level":"debug","cron":""}
