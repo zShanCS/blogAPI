@@ -1,6 +1,6 @@
 # BlogAPI
 
-BlogAPI lets you store and retrieve your blogs, manage users and a little more...
+BlogAPI (Deployed At: [https://zcsblog.herokuapp.com/docs](https://zcsblog.herokuapp.com/docs) ) lets you store and retrieve your blogs, manage users and a little more...
 built with the power of lightning fast [FastAPI](https://fastapi.tiangolo.com) (as far as development time is concerned at least 😅) 
 
 ## Installation
