@@ -1,4 +1,4 @@
-from src.oauth2 import get_current_user
+from ..oauth2 import get_current_user
 from typing import List
 from fastapi import APIRouter, status, Depends
 from .. import database, schemas

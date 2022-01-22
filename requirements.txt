@@ -1,4 +1,5 @@
 fastapi==0.70.0
+uvicorn[standard]
 pydantic
 sqlalchemy
 passlib[bcrypt]
