@@ -15,7 +15,8 @@ def create(request: schemas.CreateUser, db: Session):
         db.add(new_user)
         db.commit()
         db.refresh(new_user)
-    except Exception:
+    except Exception as e:
+        print(e)
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                             detail=f'Something went wrong. Use unique username please.')
     return new_user
